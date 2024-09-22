@@ -1,0 +1,67 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.product-title {
+  margin: 0; /* Убираем внешний отступ */
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+.category-active {
+  background-color: darkorange;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.users {
+  display: flex;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin: 30px;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  width: 50px;
+  text-align: center;
+  background-color: beige;
+}
+
+.menu a.active {
+  background-color: black;
+  color: white;
+}
